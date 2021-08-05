@@ -7,7 +7,7 @@ pd.set_option('display.max_rows',10,"display.max_columns",5)
 
 
 #ler arquivo
-df = pd.read_csv("DadosEmpresa.csv")
+df = pd.read_csv(".\DadosEmpresa.csv")
 #print de colunas 
 print("Colunas do arquivo: ")
 print(df.columns.values)
@@ -35,9 +35,10 @@ print(df[(df["capital_social"]>=10000) & (df["capital_social"] <=20000)].all)
 pd.set_option('display.max_rows',10)
 
 #lendo o arquivo dados endereco
-df2 = pd.read_csv("DadosEndereco.csvv")
+df2 = pd.read_csv(".\DadosEndereco.csv")
 #dando merge nos dois data_frames
 df_merged = pd.merge(df,df2,on="cnpj")
-df_merged.to_csv("DadosDeCuritiba.csv")
+#pegando apenas os dados que possuem valor CURITIBA como municipio
+df_merged[df_merged["municipio"]=="CURITBA"].to_csv("DadosDeCuritiba.csv")
 
 
