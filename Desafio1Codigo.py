@@ -35,7 +35,7 @@ print(df[(df["capital_social"]>=10000) & (df["capital_social"] <=20000)].all)
 pd.set_option('display.max_rows',10)
 
 #lendo o arquivo dados endereco
-df2 = pd.read_csv("C:/Users/Win10/Desktop/Progamas/Estágio/DadosEndereco.csv")
+df2 = pd.read_csv("DadosEndereco.csvv")
 #dando merge nos dois data_frames
 df_merged = pd.merge(df,df2,on="cnpj")
 df_merged.to_csv("DadosDeCuritiba.csv")
