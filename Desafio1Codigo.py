@@ -7,7 +7,7 @@ pd.set_option('display.max_rows',10,"display.max_columns",5)
 
 
 #ler arquivo
-df = pd.read_csv("C:/Users/Win10/Desktop/Progamas/Estágio/DadosEmpresa.csv")
+df = pd.read_csv("DadosEmpresa.csv")
 #print de colunas 
 print("Colunas do arquivo: ")
 print(df.columns.values)
