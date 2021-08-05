@@ -3,7 +3,7 @@
 #imports
 import pandas as pd 
 
-pd.set_option('display.max_rows',10,"display.max_columns",5)
+
 
 
 #ler arquivo
