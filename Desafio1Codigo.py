@@ -39,6 +39,6 @@ df2 = pd.read_csv(".\DadosEndereco.csv")
 #dando merge nos dois data_frames
 df_merged = pd.merge(df,df2,on="cnpj")
 #pegando apenas os dados que possuem valor CURITIBA como municipio
-df_merged[df_merged["municipio"]=="CURITBA"].to_csv("DadosDeCuritiba.csv")
+df_merged[df_merged["municipio"]=="CURITIBA"].to_csv("DadosDeCuritiba.csv")
 
 
